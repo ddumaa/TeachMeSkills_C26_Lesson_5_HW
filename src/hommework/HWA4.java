@@ -19,6 +19,17 @@ public class HWA4 {
                 }
             }
         }
+        System.out.println(" ");
+        int numbers2 = array.length-1;
+        for (int i = array.length-1; i>=0; i--) {
+            for (int j = array[i].length-1; j >=0; j--) {
+                if(array[i][j] == array[numbers2][numbers2]) {
+                    System.out.println(array[numbers2][numbers2]);
+                    numbers2--;
+                }
+            }
+        }
+        System.out.println(" ");
         System.out.println(Arrays.deepToString(array));
     }
 }
